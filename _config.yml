@@ -1,0 +1,16 @@
+title: "Shirou's Academic Homepage"
+description: "Welcome to my personal academic homepage."
+baseurl: ""
+url: "https://your-github-username.github.io"
+theme: minima
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+header_pages:
+  - index.md
+  - about.html
