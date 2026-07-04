@@ -2,295 +2,265 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Shirou Jing</title>
-
     <meta name="author" content="Shirou Jing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="images/Shirou.jpg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script>
-      function showSection(sectionId) {
-        var sections = document.querySelectorAll('.section');
-        sections.forEach(function(section) {
-          section.classList.remove('active');
-        });
-        document.getElementById(sectionId).classList.add('active');
-  
-        var navLinks = document.querySelectorAll('.nav a');
-        navLinks.forEach(function(link) {
-          link.classList.remove('active');
-        });
-        document.querySelector('.nav a[href="#' + sectionId + '"]').classList.add('active');
-      }
-    </script>
   </head>
 
-  <body onload="showSection('research')">
+  <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
+
+          <!-- ===================== HEADER ===================== -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p class="name" style="text-align: center;">
-                    Shirou Jing
-                  </p>
-                  <p>I'm a senior year student at <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences">University of Chinese Academy of Science</a> in Beijing, majored in computer science, 
-                    where I cooperate with <a href="https://lynnho.github.io/">Dr. Zhenliang He</a> and <a href="https://scholar.google.com/citations?user=Vkzd7MIAAAAJ">Prof. Shiguang Shan</a> in Diffusion based Video generation.
-                  </p>
+                  <p class="name" style="text-align: center;">Shirou Jing</p>
+
                   <p>
-                    I'm also an exchange student at UC Berkeley, where I intern in <a href="https://abc.berkeley.edu/">ABC lab</a>, founded by <a href="https://vcresearch.berkeley.edu/faculty/eric-betzig">Eric Betzig</a>, advised by <a href="https://xiongtaoruan.com/">Xiongtao Ruan</a> and <a href="https://vcresearch.berkeley.edu/faculty/srigokul-upadhyayula">Srigokul Upadhyayula</a>,
-                    working on AI for microscopy image analysis.
-                    
+                    I am a first-year Ph.D. student in Electrical &amp; Computer Engineering at
+                    <a href="https://www.rice.edu/">Rice University</a>,
+                    advised by <a href="https://www.tonytgeng.com/">Prof. Tony (Tong) Geng</a>.
+                    I received my B.S. in Computer Science from the
+                    <a href="https://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences">University of Chinese Academy of Sciences (UCAS)</a>.
                   </p>
+
+                  <p>
+                    Before Rice, I worked on generative / diffusion models (controllable image &amp; video
+                    generation) at UCAS with <a href="https://lynnho.github.io/">Dr. Zhenliang He</a> and
+                    Prof. Shiguang Shan, and interned at UC Berkeley's
+                    <a href="https://abc.berkeley.edu/">ABC Lab</a> (Betzig lab) on AI for microscopy imaging.
+                  </p>
+
+                  <p>
+                    My research focuses on <strong>information-efficient, maturity-aware pretraining of language models</strong>
+                    &mdash; designing dynamic learning tasks so that models begin to acquire reasoning capability from the
+                    pretraining stage &mdash; and on <strong>multi-agent LLM systems</strong>.
+                  </p>
+
                   <p style="text-align:center">
-                    <a href="mailto:shirou_sav@berkeley.edu">Email</a> &nbsp;/&nbsp;
-                    <a href="data/CV-ShirouJing_formal.pdf">CV</a> &nbsp;/&nbsp;
-                    <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
-                    <a href="">Scholar</a> &nbsp;/&nbsp;
-                    <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
+                    <a href="mailto:sj186@rice.edu">Email</a> &nbsp;/&nbsp;
+                    <a href="data/CV_ShirouJing.pdf">CV</a> &nbsp;/&nbsp;
                     <a href="https://www.linkedin.com/in/shirou-jing-23056a303/">LinkedIn</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/limerenceaid">Github</a>
+                    <a href="https://github.com/limerenceaid">GitHub</a>
+                    <!-- Scholar: add link once you set up a Google Scholar profile -->
+
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/Shirou.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Shirou.jpg" class="hoverZoomLink"></a>
+                  <a href="images/Shirou.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Shirou.jpg"></a>
                 </td>
               </tr>
             </tbody>
           </table>
-        
-          <div class="container">
-            <div class="nav">
-              <a href="#research" class="active" onclick="showSection('research')">Research Experiences</a>
-              <a href="#publications" onclick="showSection('publications')">Publications/Projects</a>
-            </div>
-            <div id="research" class="section active">
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2>Research Experience</h2>
-                    <p>
-                      My research journey has been driven by a passion for leveraging computer science and AI to innovate solutions that intersect with 
-                      human needs. From early inspirations in science literature to hands-on experiences in high-tech startups and prestigious research 
-                      institutions, my academic path has been marked by a deep exploration of generative models, human-computer interaction, and the 
-                      practical applications of AI.
-                    </p>
-                    <p>
-                      My fascination with science began in childhood, sparked by books like "Horrible Science" and "Horrible Maths." This early interest
-                       evolved during a six-month visit to OSU, where I constructed a toy rocket that ignited my curiosity in practical science applications. 
-                       In high school, my passion for computers grew as I excelled in informatics competitions, winning a provincial first prize.
-                    </p>
-                    Entering university, I laid a strong foundation in mathematics and physics, which proved pivotal during a transformative summer 
-                    internship at ZhenTec Intelligence. Here, within a pioneering startup incubated by Xi'an Jiaotong University, I developed a keen 
-                    interest in human-computer interaction by contributing to the development of brain-machine rehabilitation robots.
 
-                  </p>
-                  <p>
-                    During subsequent years, my research interests expanded into diverse domains such as lip reading recognition, video forgery detection, 
-                    and radar image processing. At Xi'an Jiaotong University, under the mentorship of Prof. Haixia Bi, I participated in a novel  
-                    research on classifying Polarimetric SAR Images using diffusion models, achieving significant advancements published in IGARSS 2024.
-                  </p>
-                  <p>
-                    Motivated by the real-world challenge of tenosynovitis among lab mates due to extensive mouse use, I collaborated with Prof. Feng 
-                    Tian and Prof. Wei Sun to design a game-based solution for rehabilitation. This endeavor resulted in a patent application and a 
-                    paper accepted by IPCV, highlighting our innovative approach.
-                  </p>
-                  <p>
-                    My passion for generative models deepened during collaboration with Prof. Shiguang Shan and Zhenliang He at the Institute of 
-                    Computing Technology. Securing substantial funding from China's inaugural open grant project for undergraduates underscored 
-                    the potential impact of my work in advancing diffusion models' creative applications.
-                  </p>
-                  <p>
-                    An exchange visit to UC Berkeley was a pivotal experience that further refined my research trajectory. Engaging with AI-driven 
-                    microscopy algorithms at the ABC lab, founded by Nobel laureate Eric Betzig, solidified my commitment to integrating AI with 
-                    human needs. This exposure to cutting-edge technology in a world-renowned laboratory reinforced my determination to pursue advanced studies in AI.
-                  </p>
-                  <p>
-                    In summary, my research journey has been characterized by a quest for innovation at the intersection of AI and human-centered 
-                    applications. As I embark on the next phase of my academic career, I am eager to contribute to groundbreaking research that 
-                    addresses significant societal challenges through advanced AI technologies.  
-                    </p>
+          <div style="padding: 0 2.5%;">
+
+            <!-- ===================== NEWS ===================== -->
+            <h2 class="sec">News</h2>
+            <ul class="news">
+              <li><span class="date">2026</span>
+                  <span>🎉 <strong>InfoDLM</strong> was accepted to <strong>ICML 2026</strong>.</span></li>
+              <li><span class="date">2026</span>
+                  <span><strong>RCS</strong> (multi-agent LLM systems) was submitted to <strong>NeurIPS 2026</strong>.</span></li>
+              <li><span class="date">2025</span>
+                  <span>Started my Ph.D. at <strong>Rice University</strong> (ECE), advised by Prof. Tony Geng.</span></li>
+              <li><span class="date">2024</span>
+                  <span><strong>GIGT</strong> was accepted to IPCV 2024.</span></li>
+              <!-- add more news items here, newest first -->
+            </ul>
+
+            <!-- ===================== PUBLICATIONS ===================== -->
+            <h2 class="sec">Selected Publications</h2>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+
+                <!-- ---- InfoDLM (featured / newest) ---- -->
+                <tr class="featured">
+                  <td style="padding:16px;width:25%;vertical-align:middle">
+                    <a href="images/research/infodlm.png"><img src="images/research/infodlm.png" alt="InfoDLM method overview"
+                       style="width:100%;max-width:100%;"></a>
+                  </td>
+                  <td style="padding:16px;width:75%;vertical-align:middle">
+                    <span class="papertitle">InfoDLM: an Information-Adaptive Framework for Discrete Diffusion Language Model Pretraining</span>
+                    <br>
+                    <strong>Shirou Jing</strong>, Chunshu Wu, Chuan Liu, Arghavan Bahadorinejad, Feitong Qiao, Dongfang Liu, Tony Geng
+                    <br>
+                    <span class="pub-venue">ICML 2026</span>
+                    <br>
+                    <a href="https://openreview.net/forum?id=c5fRyYtMos">OpenReview</a> /
+                    <a href="data/InfoDLM.pdf">PDF</a>
                     <p>
-                      My intrigue in generative models, particularly diffusion models, deepened during my summer research. In my junior year, I collaborated 
-                      with Prof. Shiguang Shan and Zhenliang He at the Institute of Computing Technology, focusing on diffusion models' creative potential. 
-                      Notably, I secured funding of RMB 67,000 from China's first open grant project for undergraduates, underscoring the significance and 
-                      potential impact of my research.
+                      InfoDLM replaces the heuristic random masking in diffusion-LM pretraining with an
+                      information-gain&ndash;driven mask policy (a trainable IG signal + maturity-aware masking,
+                      jointly trained with the model). With ~7.6% FLOPs overhead, it improves reasoning accuracy
+                      by up to 13% over LLaDA-472M at a comparable budget.
                     </p>
+                  </td>
+                </tr>
+
+                <!-- ---- Applied Soft Computing 2025 ---- -->
+                <tr>
+                  <td style="padding:16px;width:25%;vertical-align:middle"></td>
+                  <td style="padding:16px;width:75%;vertical-align:middle">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S156849462401370X">
+                      <span class="papertitle">Learning with Noisy Labels via Mamba and Entropy KNN Framework</span></a>
+                    <br>
+                    Ningwei Wang, Weiqiang Jin, <strong>Shirou Jing</strong>, Haixia Bi, Guang Yang
+                    <br>
+                    <span class="pub-venue">Applied Soft Computing, 2025</span>
+                    &nbsp;/&nbsp;
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S156849462401370X">paper</a>
                     <p>
-                      During my exchange visit to UC Berkeley, I brought my research questions and a strong curiosity about AI to CVPR, where I received 
-                      guidance and encouragement from many experienced researchers. This experience solidified my determination to pursue further studies in AI. 
+                      <em>RelabelMamba</em>: a learning-with-noisy-labels framework with a bidirectional state-space
+                      (Mamba) backbone for global, linear-complexity representations; entropy&ndash;variance + KNN
+                      relabeling (AEKR) to correct mislabeled samples; and a variance-aware mixup (Adaptpuzzle).
+                      Competitive on CIFAR-10/100, Clothing1M, and ANIMAL-10N.
                     </p>
-                    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-                      <div style="flex: 1; margin: 5px;">
-                        <img src="images/CVPR/1.JPG" alt="CVPR Photo 1" style="width: 100%; height: auto;">
-                      </div>
-                      <div style="flex: 1; margin: 5px;">
-                        <img src="images/CVPR/2.JPG" alt="CVPR Photo 2" style="width: 100%; height: auto;">
-                      </div>
-                      <div style="flex: 1; margin: 5px;">
-                        <img src="images/CVPR/3.JPG" alt="CVPR Photo 3" style="width: 100%; height: auto;">
-                      </div>
-                    </div>
-                    <div style="display: flex; justify-content: space-around; margin-top: 10px;">
-                      <div style="flex: 1; margin: 5px;">
-                        <img src="images/CVPR/4.jpg" alt="CVPR Photo 4" style="width: 100%; height: auto;">
-                      </div>
-                      <div style="flex: 1; margin: 5px;">
-                        <img src="images/CVPR/5.jpg" alt="CVPR Photo 5" style="width: 100%; height: auto;">
-                      </div>
-                    </div>
-                    
+                  </td>
+                </tr>
+
+                <!-- ---- IGARSS 2024 ---- -->
+                <tr>
+                  <td style="padding:16px;width:25%;vertical-align:middle"></td>
+                  <td style="padding:16px;width:75%;vertical-align:middle">
+                    <a href="https://ieeexplore.ieee.org/document/10642798/">
+                      <span class="papertitle">Diffusion-Based Generative Self-Supervised Model for Few-Shot PolSAR Image Classification</span></a>
+                    <br>
+                    Kang Liu, Zuzheng Kuang, <strong>Shirou Jing</strong>, Haixia Bi, Yaochen Li, Chen Xu
+                    <br>
+                    <span class="pub-venue">IGARSS 2024</span>
+                    &nbsp;/&nbsp;
+                    <a href="https://ieeexplore.ieee.org/document/10642798/">IEEE Xplore</a>
+                    <p>
+                      A diffusion-based generative self-supervised model that learns discriminative, robust
+                      polarimetric representations without annotations via a noise-adding / denoising process,
+                      improving few-shot PolSAR image classification.
+                    </p>
+                  </td>
+                </tr>
+
+                <!-- ---- GIGT ---- -->
+                <tr>
+                  <td style="padding:16px;width:25%;vertical-align:middle">
+                    <img src="images/research/GIGT_in.jpg" alt="GIGT" style="width:100%;max-width:160px;border-radius:4px;">
+                  </td>
+                  <td style="padding:16px;width:75%;vertical-align:middle">
+                    <a href="https://github.com/CLV-Iclucia/HCI-Project/tree/master">
+                      <span class="papertitle">GIGT: Gesture-Recognition-Integrated Game Therapy for Tenosynovitis</span>
+                    </a>
+                    <br>
+                    <strong>Shirou Jing</strong>, Xuejin Wu, Wei Sun
+                    <br>
+                    <span class="pub-venue">IPCV 2024</span>
+                    <br>
+                    <a href="https://github.com/CLV-Iclucia/HCI-Project/">project page</a> /
+                    <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+                    <p>
+                      An interactive game for tenosynovitis prevention: deep-learning hand-gesture recognition drives
+                      customizable tendon-sheath exercises through an engaging interface.
+                    </p>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <!-- ===================== IN SUBMISSION ===================== -->
+            <h2 class="sec">Preprints &amp; In Submission</h2>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:16px;width:25%;vertical-align:middle"></td>
+                  <td style="padding:16px;width:75%;vertical-align:middle">
+                    <span class="papertitle">RCS: Rhythm-Controlled Communication for Multi-Agent LLM Systems</span>
+                    <br>
+                    <span class="pub-venue">Submitted to NeurIPS 2026</span>
+                    <p>
+                      Reformulates communication in multi-agent LLM systems from fixed, top-down turn-taking into a
+                      learned, self-adaptive <em>communication rhythm</em> &mdash; coordinating <em>when</em> agents
+                      contribute, not just <em>what</em> &mdash; reaching debate-level accuracy at a fraction of the
+                      communication cost.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:16px;width:25%;vertical-align:middle"></td>
+                  <td style="padding:16px;width:75%;vertical-align:middle">
+                    <span class="papertitle">CtrLoRA-XL: Cost-efficient, High-fidelity Multi-condition Controllable Image Generation on Stable Diffusion XL</span>
+                    <br>
+                    With Dr. Zhenliang He and Prof. Shiguang Shan
+                    <br>
+                    <span class="pub-venue">Submitted to IJCV</span>
+                    <p>
+                      A cost-efficient, high-fidelity framework for multi-condition controllable image generation on
+                      SDXL, cutting GPU and training-image requirements by over 99% for adapting to novel conditions
+                      while preserving fidelity.
+                    </p>
                   </td>
                 </tr>
               </tbody>
-              </table>
+            </table>
 
+            <!-- ===================== BACKGROUND (click to expand) ===================== -->
+            <details class="bg">
+              <summary>More about me &mdash; earlier background &amp; PhD-application materials</summary>
 
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-                <tr>
-                  <td>
-                    <h2>Miscellanea</h2>
-                  </td>
-                </tr>
-              </tbody></table>
-              <!-- <table width="100%" align="center" border="0" cellpadding="20"><tbody>  
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-                  <td width="75%" valign="center">
-                    <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                    <br>
-                    <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-                  </td>
-                </tr>
-              </tbody></table> -->
-              
+              <p style="color:#888;font-size:13px;margin-top:8px;">
+                <em>(Kept for reference &mdash; this is the longer research-journey narrative and photos from my PhD-application period.)</em>
+              </p>
 
-              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-                <tr>
-                  <td>
-                    <h2>Teaching</h2>
-                  </td>
-                </tr>
-              </tbody></table>
-              <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/cs188.jpg" alt="cs188">
-                  </td>
-                  <td width="75%" valign="center">
-                    <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Undergraduate Seminar in Computer Science and Technology, Fall 2024</a>
-                    
-                  </td>
-                </tr>
-                
-              </tbody></table>
+              <h2 class="sec" style="margin-top:16px;">Research Journey</h2>
+              <p>
+                My research journey has been driven by leveraging computer science and AI to build solutions that
+                intersect with human needs &mdash; from early inspirations in science literature to hands-on work in
+                startups and research institutions, exploring generative models, human&ndash;computer interaction, and
+                practical applications of AI.
+              </p>
+              <p>
+                My fascination with science began in childhood (books like <em>Horrible Science</em> and <em>Horrible Maths</em>),
+                grew during a six-month visit to OSU where I built a toy rocket, and sharpened in high school through
+                informatics competitions (provincial first prize). At university I built a foundation in math and physics,
+                which proved pivotal during a summer internship at ZhenTec Intelligence, a startup incubated by Xi'an Jiaotong
+                University, where I worked on brain&ndash;machine rehabilitation robots.
+              </p>
+              <p>
+                My interests later expanded to lip-reading recognition, video-forgery detection, and radar image processing.
+                At Xi'an Jiaotong University, with Prof. Haixia Bi, I worked on classifying Polarimetric SAR images using
+                diffusion models (published at IGARSS 2024). Motivated by tenosynovitis among lab mates, I collaborated with
+                Prof. Feng Tian and Prof. Wei Sun on a game-based rehabilitation solution (a patent application and the GIGT
+                paper at IPCV). My interest in generative models deepened during collaboration with Prof. Shiguang Shan and
+                Dr. Zhenliang He at the Institute of Computing Technology, supported by RMB 67,000 from China's first open
+                grant project for undergraduates.
+              </p>
+              <p>
+                An exchange visit to UC Berkeley (interning at the <a href="https://abc.berkeley.edu/">ABC lab</a>, founded by
+                Eric Betzig) further refined my trajectory, working on AI-driven microscopy image analysis and reinforcing
+                my commitment to advanced study in AI.
+              </p>
 
-            </div>  
+              <div style="display: flex; justify-content: space-around; margin-top: 16px; gap: 8px; flex-wrap: wrap;">
+                <img src="images/CVPR/1.JPG" alt="CVPR 1" style="flex:1; min-width:120px; max-width:32%; height:auto; border-radius:4px;">
+                <img src="images/CVPR/2.JPG" alt="CVPR 2" style="flex:1; min-width:120px; max-width:32%; height:auto; border-radius:4px;">
+                <img src="images/CVPR/3.JPG" alt="CVPR 3" style="flex:1; min-width:120px; max-width:32%; height:auto; border-radius:4px;">
+              </div>
 
-            <div id="publications" class="section"></div>
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
+              <!-- TODO: teaching / service — confirm real entries or delete this block
+              <h2 class="sec" style="margin-top:16px;">Teaching</h2>
+              <p>[e.g. TA, Undergraduate Seminar in CS, Fall 2024 — confirm or remove]</p>
+              -->
+            </details>
 
+            <p style="text-align:center;color:#bbb;font-size:12px;margin-top:40px;">
+              Last updated Jul 2026. Template adapted from Jon Barron.
+            </p>
 
-      <tr onmouseout="GIGT_stop()" onmouseover="GIGT_start()" bgcolor="#ffffd0">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='GIGT_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="research/GIGT_out.mp4" type="img">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='research/GIGT_in.jpg' width="160">
           </div>
-          <script type="text/javascript">
-            function GIGT_start() {
-              document.getElementById('GIGT_image').style.opacity = "1";
-            }
-
-            function GIGT_stop() {
-              document.getElementById('GIGT_image').style.opacity = "0";
-            }
-            cat3d_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://github.com/CLV-Iclucia/HCI-Project/tree/master">
-        <span class="papertitle"> GIGT: Gesture-Recognition-Integrated Game Therapy for Tenosynovitis
-  </span>
-          </a>
-          <br>
-          <!-- <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*, -->
-          <strong>Shirou Jing</strong>,
-          <a href="https://henzler.github.io/">Wei Sun</a>,
-          <a href="https://github.com/ArthurBrussee">Xuejin Wu</a>, 
-
-          <br>
-          <em>IPCV</em>, 2024
-          <br>
-          <a href="https://github.com/CLV-Iclucia/HCI-Project/">project page</a>
-          /
-          <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-          <p></p>
-          <p>
-            Developed an interactive game for tenosynovitis prevention using deep learning to accurately recognize and classify hand gestures, enabling customizable 
-            tendon sheath exercises through an engaging and user-friendly interface.
-          </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="GIGT_stop()" onmouseover="GIGT_start()" bgcolor="#ffffd0">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='GIGT_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="research/GIGT_out.mp4" type="img">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='research/GIGT_in.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function GIGT_start() {
-              document.getElementById('GIGT_image').style.opacity = "1";
-            }
-
-            function GIGT_stop() {
-              document.getElementById('GIGT_image').style.opacity = "0";
-            }
-            cat3d_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://github.com/CLV-Iclucia/HCI-Project/tree/master">
-        <span class="papertitle"> GIGT: Gesture-Recognition-Integrated Game Therapy for Tenosynovitis
-  </span>
-          </a>
-          <br>
-          <!-- <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*, -->
-          <strong>Shirou Jing</strong>,
-          <a href="https://henzler.github.io/">Wei Sun</a>,
-          <a href="https://github.com/ArthurBrussee">Xuejin Wu</a>, 
-
-          <br>
-          <em>IPCV</em>, 2024
-          <br>
-          <a href="https://github.com/CLV-Iclucia/HCI-Project/">project page</a>
-          /
-          <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-          <p></p>
-          <p>
-            Developed an interactive game for tenosynovitis prevention using deep learning to accurately recognize and classify hand gestures, enabling customizable 
-            tendon sheath exercises through an engaging and user-friendly interface.
-          </p>
-        </td>
-      </tr>
-
-              </tbody></table>
-            </div>
-          
-          
         </td>
       </tr>
     </table>
